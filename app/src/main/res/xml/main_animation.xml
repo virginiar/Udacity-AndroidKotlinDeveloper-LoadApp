@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetStart="@+id/start_detail"
+        app:constraintSetEnd="@+id/end_detail"
+        app:autoTransition="animateToEnd"
+        app:duration="2000">
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start_detail">
+        <Constraint
+            android:id="@+id/customButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:alpha="0.0"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end_detail">
+        <Constraint
+            android:id="@+id/customButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:alpha="1.0"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+</MotionScene>
